@@ -3,9 +3,7 @@ import './App.css';
 import { parse as parseQuery } from "query-string";
 import jwtDecode from "jwt-decode";
 import axios  from 'axios'
-import { Button } from "@cdk-uip/react-button";
-import { Card } from "@cdk-uip/react-card"
-import { LayoutGrid, LayoutGridCell } from "@cdk-uip/react-layout-grid";
+
 class Welcome extends Component {
   
     login = () => {
@@ -58,15 +56,13 @@ class Welcome extends Component {
         return (
             
             <div style={{padding: '50px'}}>
-                <Card style={{'textAlign': 'center', 'backgroundColor': '#d8e9f1'}}>
-                    <LayoutGrid nested >
-                        <LayoutGridCell style={{padding: '10px'}}span={2}>
+                <div style={{'textAlign': 'center', 'backgroundColor': '#d8e9f1'}}>
+                    
                             <div style={{'paddingBottom': '10px'}}hidden= {!this.state.authenticated}>Welcome to Fortellis: {this.state.username}</div>
-                            <Button hidden= {this.state.authenticated} onClick={this.login} >LOGIN</Button>
-                            <Button  hidden= {!this.state.authenticated} onClick={this.logout} >LOGOUT</Button>
-                        </LayoutGridCell>
-                    </LayoutGrid>
-                </Card>
+                            <button hidden= {this.state.authenticated} onClick={this.login} >LOGIN</button>
+                            <button  hidden= {!this.state.authenticated} onClick={this.logout} >LOGOUT</button>
+                    
+                </div>
             </div>
         );
     }

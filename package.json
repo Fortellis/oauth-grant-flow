@@ -10,10 +10,6 @@
     "query-string": "^5.1.0",
     "react-router-dom": "^4.2.2",
     "jwt-decode": "^2.2.0",
-    "@cdk-uip/icons": "^1.5.1",
-    "@cdk-uip/react": "^4.7.1",
-    "@cdkglobal/cdk-scripts": "^3.8.0",
-    "@cdkglobal/react-core": "^1.2.0",
     "axios": "0.18.0"
   },
   "scripts": {

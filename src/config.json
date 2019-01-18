@@ -1,0 +1,5 @@
+{
+    "client_id" : "63St7B7UqT3lFztb83gY3Q5NocrvvUVu",
+    "base_url" : "https://api.accounts.fortellis.io/oauth2/aus1ufzl27tS4FQ9X2p7/v1/authorize",
+    "redirect_uri" : "http://localhost:3000"
+}
